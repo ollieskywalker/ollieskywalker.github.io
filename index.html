@@ -13,7 +13,7 @@
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: white;
+  color: #575757;
 }
 </style>
 
@@ -25,24 +25,52 @@
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+      <nav class="mdl-navigation" color="#575757">
+        <a class="mdl-navigation__link" href="https://www.facebook.com/oliver.chang.104">facebook</a>
+        <a class="mdl-navigation__link" href="https://www.youtube.com/channel/UCtsFL4dO7bRvYNSY5v6f6TQ">Youtube</a>
+        <a class="mdl-navigation__link" href="http://eochang.com/">Blog</a>
       </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Title</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">About</a>
+      <a class="mdl-navigation__link" href="">Portfolio</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
   </main>
+</div>
+
+<!-- Wide card with share menu button -->
+<style>
+.demo-card-wide.mdl-card {
+  width: 720px;
+  margin: auto;
+  top: 250px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 350px;
+  background: url('mtsac.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+</style>
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Welcome to my personal website. I use this site primarily to practice my skills in html, css, and javascript.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
 </div>
 </html>
